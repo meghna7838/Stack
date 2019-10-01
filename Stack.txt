@@ -22,7 +22,7 @@ class GfG {
             q2.add(x); 
   
           
-            while (q1.isEmpty()) { //add
+            while (!q1.isEmpty()) { 
                 q2.add(q1.peek()); 
                 q1.remove(); 
             } 
@@ -37,10 +37,10 @@ class GfG {
         { 
   
   
-            if (!q1.isEmpty()) //*
+            if (q1.isEmpty()) 
                 return; 
             q1.remove(); 
-            curr_size; //add
+            curr_size--; 
         } 
   
         static int top() 
